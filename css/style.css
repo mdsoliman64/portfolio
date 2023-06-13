@@ -54,8 +54,9 @@ a:hover{
     margin: auto;
     overflow: hidden;
     white-space: nowrap; 
-    border-right: 2px solid #000000;
-    animation: anime 3s steps(50) infinite;
+    border-right: 2px solid #80ca7b;
+    animation: anime 3s steps(50) infinite alternate,
+    blinking 0.5s step-end infinite;
 }
 .top-container {
     background-color: #DDF7E3;
@@ -146,6 +147,15 @@ a:hover{
             width: 0;
     }
     to{
-        width: 30%;
+        width: 40%;
+    }
+  }
+  @keyframes blinking {
+    from,to{
+        border-color: transparent;
+    }
+    50%{
+
+        border-color: #008550;
     }
   }
