@@ -52,14 +52,6 @@ switch(true){
 
 }
 
-    // if(Number > 10 && Number < 18){
-    //     $(".skills").removeClass('animation');
-    //     $(".skills").addClass('animationx');
-    
-    // }else{
-    
-    //     $(".skills").addClass("animation");
-    //     $(".skills").removeClass('animationx');
-    // }
+
     
 }
