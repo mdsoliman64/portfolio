@@ -22,44 +22,50 @@ function scrolling(event){
     const Number = Math.floor(document.documentElement.scrollTop/100);
     console.log(typeof Number + Number);
 
-switch(true){
-    case (Number>10 && Number<18):
-        $(".skills").removeClass('animation');
-        $(".skills").addClass('animationx');
-        $(".profile").removeClass('animationx');
-        $(".profile").addClass('animation');
-        break;
+    console.log("height:"+window.innerHeight);
+    console.log("widtgh:"+window.innerWidth);
 
-   
-    case (Number>4 && Number<10):
-                $(".skills").addClass('animation');
-                $(".skills").removeClass('animationx');
-                $(".profile").addClass('animationx');
-                $(".profile").removeClass('animation');
-                break;
-  case ( Number>18):
+if(window.innerWidth > 998){
+
+
+    switch(true){
+        case (Number>10 && Number<18):
+            $(".skills").removeClass('animation');
+            $(".skills").addClass('animationx');
+            $(".profile").removeClass('animationx');
+            $(".profile").addClass('animation');
+            break;
+    
+       
+        case (Number>4 && Number<8):
                     $(".skills").addClass('animation');
                     $(".skills").removeClass('animationx');
-                    // $(".profile").removeClass('animationx');
-                    // $(".profile").addClass('animation');
+                    $(".profile").addClass('animationx');
+                    $(".profile").removeClass('animation');
                     break;
-    case (Number<4):
-                        // $(".skills").addClass('animation');
-                        // $(".skills").removeClass('animationx');
-                        $(".profile").removeClass('animationx');
-                        $(".profile").addClass('animation');
+      case ( Number>18):
+                        $(".skills").addClass('animation');
+                        $(".skills").removeClass('animationx');
+                       
                         break;
+        case (Number<4):
+                           
+                            $(".profile").removeClass('animationx');
+                            $(".profile").addClass('animation');
+                            break;
+    
+    }}
+else{
+
+$(".profile").removeClass("animation");
+$(".skills").removeClass("animation")
+
+
+
+
+
+}    
+
 
 }
-
-    // if(Number > 10 && Number < 18){
-    //     $(".skills").removeClass('animation');
-    //     $(".skills").addClass('animationx');
-    
-    // }else{
-    
-    //     $(".skills").addClass("animation");
-    //     $(".skills").removeClass('animationx');
-    // }
-    
-}
+   
